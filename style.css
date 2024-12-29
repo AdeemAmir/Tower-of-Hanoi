@@ -1,0 +1,202 @@
+   body {
+    font-family: 'Times New Roman', serif;
+    background: linear-gradient(to right, #ffe8fb, #f9f9fd, #fbdcff);
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #4f2653;
+    color: #fff;
+    padding: 15px 20px;
+    width: 98%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  .container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Popup Stuff */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: linear-gradient(135deg, #2a9d8f, #264653);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-content h2 {
+    font-size: 1.8rem;
+    color: #f4a261;
+    margin-bottom: 15px;
+  }
+  
+  .popup-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .popup-content button {
+    background-color: #e76f51;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .popup-content button:hover {
+    background-color: #f4a261;
+  }
+
+
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 15px;
+    background: #1e0070;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .new-game {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .new-game p {
+    color: rgb(194, 189, 238);
+  }
+  
+  .new-game select {
+    background: #4a0bdb;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .new-game button {
+    background-color: #8b0097;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .new-game button:hover {
+    background-color: #ff0062;
+  }
+  
+  #speedRange {
+    width: 200px;
+    height: 4px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    background: #a18492;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons:hover {
+    background: #ff0062;
+  }
+  
+  /* Stage Styles */
+  .stage {
+    height: 320px;
+    max-width: 800px;
+    background: rgb(255, 223, 233);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 150px;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .tower {
+    width: 200px;
+    height: 300px;
+    /*background: rgb(220, 245, 244);*/
+    background: rgb(255, 193, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .stem {
+    width: 7px;
+    height: 140px;
+    background: #3b0000;
+    position: absolute;
+    border-radius: 5px;
+  }
+  
+  .plate {
+    width: 150px;
+    height: 10px;
+    background: rgb(117, 2, 2);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .disc {
+    height: 18px;
+    border-radius: 3px;
+    z-index: 1;
+    background: #6c5b7b;
+  }
+  
+  .is-dragging {
+    opacity: 0.5;
+  }
+  
